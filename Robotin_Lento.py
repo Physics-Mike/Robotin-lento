@@ -118,7 +118,7 @@ class Hyppy:
         return laskuri
 
     def piirra_naytto(self):
-        self.naytto.fill((0, 150, 150))  
+        self.naytto.fill((0, 100, 0))  
         
         self.naytto.blit(self.kuvat[0][0], (self.robotti.x,self.robotti.y))
         if self.ylos:
@@ -173,7 +173,7 @@ class Hyppy:
             #print(self.lentavat)
         
         
-        self.naytto.fill((0, 150, 150))
+        self.naytto.fill((0, 100, 0))
         fontti = pygame.font.SysFont("Arial", 30)
         teksti1 = fontti.render("Hävisit pelin :(", True, (255, 0, 0))
         teksti1x = self.leveys/2 - teksti1.get_width()/2
